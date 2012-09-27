@@ -1,0 +1,83 @@
+# Brazilian Portuguese Translations for lxsession-lite package.
+# Copyright (C) 2008-2009 The lxsession-lite authors.
+# This file is distributed under the same license as the lxsession-lite package.
+# Luis Gustavo S. Barreto <gustavo@ossystems.com.br>, 2008.
+# Henrique P. Machado <zehrique@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lxsession-lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-22 18:37+0200\n"
+"PO-Revision-Date: 2011-06-08 13:24+0200\n"
+"Last-Translator: Sérgio <ikisham@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../lxsession-logout/lxsession-logout.c:48
+msgid "Custom message to show on the dialog"
+msgstr "Mensagem padrão para mostrar no diálogo"
+
+#: ../lxsession-logout/lxsession-logout.c:48
+msgid "message"
+msgstr "Mensagem"
+
+#: ../lxsession-logout/lxsession-logout.c:49
+msgid "Banner to show on the dialog"
+msgstr "Banner para mostrar no diálogo"
+
+#: ../lxsession-logout/lxsession-logout.c:49
+msgid "image file"
+msgstr "Arquivo de imagem"
+
+#: ../lxsession-logout/lxsession-logout.c:50
+msgid "Position of the banner"
+msgstr "Posição do banner"
+
+#: ../lxsession-logout/lxsession-logout.c:374
+#: ../lxsession-logout/lxsession-logout.c:388
+#, c-format
+msgid "Error: %s\n"
+msgstr "Erro: %s\n"
+
+#: ../lxsession-logout/lxsession-logout.c:388
+msgid "LXSession is not running."
+msgstr "O LXSession não está em execução."
+
+#: ../lxsession-logout/lxsession-logout.c:539
+#, c-format
+msgid "<b><big>Logout %s session?</big></b>"
+msgstr "<b><big>Encerrar sessão %s?</big></b>"
+
+#: ../lxsession-logout/lxsession-logout.c:547
+msgid "Sh_utdown"
+msgstr "_Desligar"
+
+#: ../lxsession-logout/lxsession-logout.c:558
+msgid "_Reboot"
+msgstr "_Reiniciar"
+
+#: ../lxsession-logout/lxsession-logout.c:569
+msgid "_Suspend"
+msgstr "_Suspender"
+
+#: ../lxsession-logout/lxsession-logout.c:580
+msgid "_Hibernate"
+msgstr "_Hibernar"
+
+#: ../lxsession-logout/lxsession-logout.c:591
+msgid "S_witch User"
+msgstr "_Trocar usuário"
+
+#. Create the Logout button.
+#: ../lxsession-logout/lxsession-logout.c:600
+msgid "_Logout"
+msgstr "_Encerrar sessão"
+
+#~ msgid "Logout"
+#~ msgstr "Encerrar sessão"

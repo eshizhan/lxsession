@@ -42,12 +42,14 @@
 static char * prompt = NULL;
 static char * banner_side = NULL;
 static char * banner_path = NULL;
+static gboolean logoutpt = FALSE;
 
 static GOptionEntry opt_entries[] =
 {
     { "prompt", 'p', 0, G_OPTION_ARG_STRING, &prompt, N_("Custom message to show on the dialog"), N_("message") },
     { "banner", 'b', 0, G_OPTION_ARG_STRING, &banner_path, N_("Banner to show on the dialog"), N_("image file") },
     { "side", 's', 0, G_OPTION_ARG_STRING, &banner_side, N_("Position of the banner"), "top|left|right|bottom" },
+    { "logout", 'o', 0, G_OPTION_ARG_NONE, &logoutpt, N_("Logout without GUI"), NULL},
     { NULL }
 };
 
@@ -480,6 +482,12 @@ int main(int argc, char * argv[])
     gtk_container_add(GTK_CONTAINER(center_area), center_vbox);
 
     GtkWidget* controls = gtk_vbox_new(FALSE, 6);
+
+    if (logoutpt == TRUE)
+    {        
+        kill(handler_context.lxsession_pid, SIGTERM);
+        gtk_main_quit();
+    }
 
     /* If specified, apply a user-specified banner image. */
     if (banner_path != NULL)

@@ -1,3 +1,10 @@
+
+Add "--logout" argument at lxsession-logout, you can logout with command line.
+
+Have fun too!
+
+origin README
+---------------------------
 LXSession is the default session manager of LXDE.
 (LXDE: Lightweight X11 Desktop Environment)
 http://lxde.org/
